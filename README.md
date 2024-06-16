@@ -13,7 +13,9 @@ This project is a Retrieval-Augmented Generation (RAG) based private document ta
 Install the Required Packages
 
 Install the required packages using the requirements.txt file:
+
 pip install -r requirements.txt
 
 After installing the required packages, run the application with Streamlit:
+
 streamlit run main.py
