@@ -1,0 +1,11 @@
+streamlit
+langchain_community
+pypdf
+chromadb
+faiss-cpu
+#faiss-gpu
+PyPDF2
+python-dotenv
+sentence_transformers
+bitsandbytes
+accelerate
