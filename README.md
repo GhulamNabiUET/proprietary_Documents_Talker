@@ -1,21 +1,29 @@
-# RAG-Based Private Document Talker
+# 🧾 Talk with Proprietary Files
 
-This project is a Retrieval-Augmented Generation (RAG) based private document talker. It allows users to interactively talk with their private documents using a user-friendly interface built with Streamlit.
+A Streamlit-based application that allows users to **upload PDF documents** and interactively **ask questions** about their contents using LLM-powered retrieval-based QA.
 
-## Features
-- Retrieval-Augmented Generation (RAG) implementation
-- Interactive and user-friendly UI
-- Support for private document interaction
+This app uses:
+- LangChain for document loading and QA chaining
+- FAISS for vector similarity search
+- Hugging Face transformers for language modeling
+- Streamlit for the user interface
 
-## Requirements
-- Python 3.11
+---
 
-Install the Required Packages
+## 🚀 Features
 
-Install the required packages using the requirements.txt file:
+- 📄 Upload multiple PDF files
+- 📚 Extract and chunk documents into text
+- 🤖 Embed text using `sentence-transformers/all-MiniLM-L6-v2`
+- 🧠 Ask questions and receive LLM-generated answers based on uploaded content
+- 🔍 Uses vector similarity search with FAISS
+- 🧵 Keeps history of Q&A and source context per session
 
-pip install -r requirements.txt
+---
 
-After installing the required packages, run the application with Streamlit:
+## 📦 Requirements
 
-streamlit run main.py
+Install dependencies via pip:
+
+```bash
+pip install streamlit langchain faiss-cpu sentence-transformers transformers
